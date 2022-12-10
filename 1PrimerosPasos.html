@@ -1,0 +1,67 @@
+<meta charset="UTF-8"> <!-- Codigo ASCII / Compatible con todos los navegadores-->
+
+<!-- HTML = Codigo estático (No diferencia entre minus y MAYUS) -->
+<h1>Soy código HTML</h1>
+
+<h2>Yo nunca cambiaré</h2>
+<a href="https://app.aluracursos.com/">Estudia aquí, no te distraigas :v</a>
+<br>
+<br>
+
+<!-- Codigo Javascript = Código dinámico (variables,etc)-->
+<script>
+    let year = 2022;
+    // Código HTML dentro de JS
+    document.write("STRING+INT: Soy código HTML infiltrado en JS muahaha INT:" + (25*15)+"<br> Estamos en el año: "+ year+" por si no lo sabías :vvvvvvvv")
+
+    numberPI = (2.1416+1)
+
+    addLine();
+    document.write("Se redondea el número Pi :c "+ Math.round(numberPI));
+    addLine();
+    document.write("INT: "+25*15)
+    addLine();
+    alert("Esto no es un virus :v")
+
+    // Funciones
+    // function nombreFuncion(PARAMETROS) -> Verbos
+    function addLine(){
+        document.write("<br>");
+    }
+
+    /* Función con parámetros
+                  variable(valor)
+    function nombreFuncion(PARAMETROS)
+    */
+    function printMessage(phrase){
+        //            (Variable que se usa)
+        document.write(phrase)
+        // Función llamando a otra (printMessage - addLine)
+        addLine();
+    }
+
+    printMessage("<br>Estoy usando la función <b>printMessage</b> con un parámetro en string")
+
+    // Calcular IMC
+    function calculateIMC(name, weight, height){
+        imc = weight/(height*height);
+        printMessage("<br>El IMC de "+name+" es de: "+imc)
+    }
+
+    weightPerson1 = 70
+    heightPerson1 = 1.70
+    namePerson1 = "C.C"
+    calculatePerson1 = calculateIMC(namePerson1,weightPerson1,heightPerson1)
+
+    // -.-.-.-.-.-.-.-.-.-.-.-.-.-.-
+    // Usando la función directamente
+
+    calculatePerson2 = calculateIMC("Tesla",90,2.00)
+
+
+    // Preguntar al USER
+    let yearsOld = prompt("¿Cuántos años tienes?")
+    alert("De verdad tienes "+ yearsOld +" ?")
+
+</script>
+
